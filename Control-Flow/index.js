@@ -38,16 +38,16 @@ function gradingScores(scores) {
 
 gradingScores([55,30,70,85,40,20,90,60]);
 
-// while statement
-const loginAttempt = () => {
-    let loginAttempt = 1;
-    while (loginAttempt <= 3) {
-        console.log(`Login attempt ${loginAttempt}`);
-        loginAttempt ++;
-    }   
-}
+// // while statement
+// const loginAttempt = () => {
+//     let loginAttempt = 1;
+//     while (loginAttempt <= 3) {
+//         console.log(`Login attempt ${loginAttempt}`);
+//         loginAttempt ++;
+//     }   
+// }
 
-loginAttempt()
+// loginAttempt()
 
 // do while statement
 function loginAttemptUsingDoWhile() {
@@ -114,3 +114,13 @@ accessTypes(roles)
 
 const days = new Date().getDay()
 console.log(days);
+
+
+function loginAttempt() {
+    let loginAttempt = 0;
+    while (loginAttempt >= 3) {
+        console.log('Account locked');
+        loginAttempt++;
+    }
+}
+loginAttempt()
